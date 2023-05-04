@@ -1,0 +1,31 @@
+import java.time.LocalDateTime;
+
+public class Primo{
+  public static void main(String[] args){
+    int x = 897;
+    int contagiros = 0;
+    int resto = 2;
+    
+    System.out.pritlin(x/2);
+    
+    if(x==2){
+      resto = 2;}
+    else if(x%2 == 0){
+       resto = 3;}
+    else{ 
+      for (i = 3; i <= x/2; i+=){
+        contagiros += 1;
+        if (x % i == 0){
+          resto += 1;}
+      }
+    }
+    if (resto == 2){
+      System.out.println( x + " é primo");
+    }
+    else {
+      System.out.printlin(x + "não é primo");
+    }
+    System.out.println("Giros: " + contagiros);
+      
+  }
+  }
