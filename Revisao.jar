@@ -1,0 +1,88 @@
+public class Revisao {
+
+//QUESTÃO 1
+Public static void main(String[] args) {
+        double janeiro = 15000;
+        double fevereiro = 23000;
+        double marco = 17000;
+        
+        double calc1 = (janeiro + fevereiro + marco) / 3;
+        System.out.println(media);
+    }
+
+//QUESTÃO 2
+
+public class SomaDe1Ate1000 {
+    public static void main(String[] args) {
+        int soma = 0;
+        for (int i = 1; i <= 1000; i++) {
+            soma += i;
+        }
+        System.out.println("A soma de 1 até 1000 é: " + soma);
+    }
+}
+
+
+//QUESTÃO 3
+public static void main(String[] args) {
+        for (int i = 1; i <= 100; i++) {
+            if (i % 3 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+}
+
+QUESTÃO 4
+public static void main(String[] args) {
+
+    for (int i = 150; i <= 300; i++) {
+        System.out.println("Os numeros de 150 a 300: " + i);
+        }
+}
+
+//QUESTÃO 5
+public static void main(String[] args) {
+        for (int n = 1; n <= 10; n++) {
+            int fatorial = 1;
+            for (int i = 1; i <= n; i++) {
+                fatorial *= i;
+            }
+            System.out.println("O fatorial de " + n + " é: " + fatorial);
+        }
+    }
+
+//QUESTÃO 6
+public static void main(String[] args) {
+        for (int n = 1; n <= 40; n++) {
+            long fatorial = 1;
+            for (int i = 1; i <= n; i++) {
+                fatorial *= i;
+            }
+            System.out.println("O fatorial de " + n + " é: " + fatorial);
+        }
+    }
+
+//QUESTÃO 7
+import java.util.Scanner;
+
+public class Collatz {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite um número inteiro: ");
+        int x = input.nextInt();
+
+        while (x != 1) {
+            System.out.print(x + " -> ");
+
+            if (x % 2 == 0) {
+                x /= 2;
+            } else {
+                x = 3 * x + 1;
+            }
+        }
+
+        System.out.println(x);
+    }
+}
+}
